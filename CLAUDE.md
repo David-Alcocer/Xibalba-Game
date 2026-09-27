@@ -4,7 +4,7 @@ Guía de trabajo para este repositorio. Aplica a todos los colaboradores y a cua
 
 ## Motor
 
-Godot 4.x (versión exacta en `docs/decisiones.md`). Todos deben usar la misma versión.
+Godot 4.7.2. Todos deben usar exactamente esta versión.
 
 ## Estructura de carpetas
 
@@ -63,6 +63,6 @@ Así `main` siempre corre. Cuando la función está lista y probada, se abre un 
 |---|---|
 | `@David-Alcocer` | Misa — repo, QA, integración, builds (CodeOwner) |
 | `@adrian-software-dev` | Adrian — programación principal (CodeOwner) |
-| `@hermensdiaz` | Steven — programación y pixel art |
-| `@Leonardo-Lomas` | Leo — dirección creativa, pixel art, game feel |
+| `@hermensdiaz` | Steven — diseño y pixel art |
+| `@Leonardo-Lomas` | Leo — dirección creativa, pixel art, game feel, programación (XIB-16, XIB-18) |
 | `@Osiris0g` | Osiris — UI, sprites de enemigos, música, SFX |
