@@ -1,4 +1,4 @@
-# Proyecto Xibalbá
+# Proyecto Xibalbá -VERSION 0.1
 
 Juego 2D de acción basado en salas, inspirado en la mitología maya. El protagonista —hombre o mujer con las mismas estadísticas— busca venganza contra los dioses mayas después de hacer un pacto con los señores del Xibalbá.
 

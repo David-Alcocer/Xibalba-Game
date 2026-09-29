@@ -1,0 +1,76 @@
+[gd_scene format=3 uid="uid://bp7kp15cv4r0q"]
+
+[ext_resource type="Script" uid="uid://y8a81ldyj8te" path="res://scripts/ui/options_menu.gd" id="1_qmpnq"]
+[ext_resource type="PackedScene" uid="uid://7mmcrbmmhy04" path="res://scenes/opcion_menu/settings_options.tscn" id="2_ldnbj"]
+
+[sub_resource type="SystemFont" id="SystemFont_ugjre"]
+font_names = PackedStringArray("Impact")
+subpixel_positioning = 0
+
+[sub_resource type="SystemFont" id="SystemFont_g35pv"]
+font_names = PackedStringArray("Impact")
+subpixel_positioning = 0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jk1qb"]
+bg_color = Color(0, 0, 0, 0.5176471)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2i1eu"]
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ldnbj"]
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[node name="Options_Menu" type="Control" unique_id=1335023406]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qmpnq")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=2125241816]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=1331612657]
+layout_mode = 2
+offset_transform_enabled = true
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer" unique_id=510764009]
+layout_mode = 2
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = SubResource("SystemFont_ugjre")
+theme_override_font_sizes/font_size = 40
+text = "Settings"
+horizontal_alignment = 1
+
+[node name="SettingsOptions" parent="MarginContainer/VBoxContainer" unique_id=80810346 instance=ExtResource("2_ldnbj")]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Exit_Button" type="Button" parent="MarginContainer/VBoxContainer" unique_id=571196979]
+custom_minimum_size = Vector2(200, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_fonts/font = SubResource("SystemFont_g35pv")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_jk1qb")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_2i1eu")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ldnbj")
+text = "Return to Menu"
